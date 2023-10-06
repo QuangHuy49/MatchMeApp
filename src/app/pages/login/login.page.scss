@@ -1,0 +1,114 @@
+ion-header {
+    position: absolute;
+
+    ion-toolbar {
+        --ion-background-color: transparent;
+        --opacity             : 0;
+    }
+}
+
+ion-content {
+    --ion-background-color: linear-gradient(to bottom right, rgba(253, 246, 240, 1), rgba(245, 198, 170, 0.5));
+
+    ion-card-content {
+        .container {
+            display       : flex;
+            flex-direction: column;
+            align-items   : center;
+
+            .container-logo {
+                width : 200px;
+                height: 200px;
+            }
+
+            .container-title {
+                color         : var(--ion-color-text-custom-D5527D);
+                font-size     : 32px;
+                padding-bottom: 32px;
+            }
+
+            .container-form {
+                background-color: white;
+                padding         : 30px;
+                width           : 90%;
+                display         : flex;
+                flex-direction  : column;
+                border-radius   : 12px;
+                box-shadow      : 0px 10px 6px -6px #999999;
+                color           : var(--ion-color-text-custom-D5527D);
+
+                .container-form-title {
+                    color     : var(--ion-color-text-custom-D5527D);
+                    font-size : 20px;
+                    align-self: center;
+                    padding   : 8px 0;
+                }
+
+                .container-form-input {
+                    padding: 10px 0 !important;
+                }
+
+                .container-form-around-text {
+                    display        : flex;
+                    justify-content: space-between;
+                    font-size      : 12px;
+                    padding        : 8px 0;
+
+                    .container-form-around-remember {
+                        display       : flex;
+                        flex-direction: row;
+
+                        .container-form-remember {
+                            margin-left: 8px;
+                        }
+                    }
+
+                    .container-form-forgot {}
+                }
+
+                .container-form-button-signin {
+                    .button-signin {
+                        margin: 20px 0;
+                        width : 100%;
+                    }
+                }
+
+                .container-form-text-or {
+                    align-self: center;
+                    padding   : 12px;
+                    position  : relative;
+                }
+
+                .container-form-text-or::before,
+                .container-form-text-or::after {
+                    content   : "";
+                    position  : absolute;
+                    top       : 50%;
+                    width     : 100%;
+                    border-top: 1px solid #000;
+                }
+
+                .container-form-text-or::before {
+                    right       : 100%;
+                    margin-right: 6px;
+                }
+
+                .container-form-text-or::after {
+                    left       : 100%;
+                    margin-left: 6px;
+                }
+
+                .container-form-icon-signin {
+                    display       : flex;
+                    flex-direction: row;
+                    align-self    : center;
+                    margin        : 12px 0;
+
+                    .container-form-image {
+                        margin: 0 12px;
+                    }
+                }
+            }
+        }
+    }
+}
