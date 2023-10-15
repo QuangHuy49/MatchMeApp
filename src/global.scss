@@ -25,11 +25,18 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+// import font Rokkitt
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap');
+
 @font-face {
   font-family: 'MyCustomFont';
   src: url('../src/assets/fonts/zh-cn.ttf') format('truetype');
 }
   
 * {
+  font-family: 'Rokkitt', serif;
+}
+
+ion-title, .container-title-text {
   font-family: 'MyCustomFont', sans-serif !important;
 }

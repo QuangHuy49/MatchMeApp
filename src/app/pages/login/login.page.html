@@ -1,34 +1,58 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-    <!-- <ion-title>login</ion-title> -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      MATCH ME
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-card-content>
     <div class="container">
-      <img class="container-logo" src="../../../assets/images/Logo_MacthMeApp_Fianl.png" />
-      <h1 class="container-title">MATCH ME</h1>
-      <div class="container-form">
-        <div class="container-form-title">SIGN IN</div>
-        <ion-input class="container-form-input" label="Email" label-placement="floating" fill="outline"
-          placeholder="Your Email" type="email"></ion-input>
-        <ion-input class="container-form-input" label="Password" label-placement="floating" fill="outline"
-          placeholder="Your Password" type="password"></ion-input>
-        <div class="container-form-around-text">
-          <div class="container-form-around-remember">
-            <input type="checkbox">
-            <div class="container-form-remember">Remember me</div>
+      <div class="container-title-login">
+        LOG IN
+      </div>
+      <div class="container-input-login">
+        <div class="container-input">
+          <img src="../../../assets/images/user.png" />
+          <input type="email" placeholder="Enter your Username"/>
+        </div>
+
+        <div class="container-input">
+          <img src="../../../assets/images/lock.png" />
+          <input type="password" placeholder="Enter your Password"/>
+        </div>
+
+        <div class="container-forgot-password">
+          <ion-button fill="clear" class="ion-no-padding">FORGOT PASSWORD?</ion-button>
+        </div>
+
+        <div class="container-btn-login">
+          <ion-button fill="solid">Log In</ion-button>
+        </div>
+
+        <div class="container-text-or">
+          OR
+        </div>
+        
+        <div class="container-btn-different-login">
+          <div class="container-btn">
+            <img src="../../../assets/images/google.png" />
+            <div>Login with Google</div>
           </div>
-          <div class="container-form-forgot">Forgot Password?</div>
+  
+          <div class="container-btn">
+            <img src="../../../assets/images/facebook.png" />
+            <div>Login with Facebook</div>
+          </div>
         </div>
-        <div class="container-form-button-signin">
-          <ion-button class="button-signin" fill="solid">SIGN IN</ion-button>
-        </div>
-        <div class="container-form-text-or">OR</div>
-        <div class="container-form-icon-signin">
-          <img class="container-form-image" src="../../../assets/images/facebook.png" />
-          <img class="container-form-image" src="../../../assets/images/google.png" />
+
+        <div class="container-text-signup">
+          <div class="container-text">Don't have an account?</div>
+          <ion-button fill="clear" class="ion-no-padding">Sign Up</ion-button>
         </div>
       </div>
     </div>

@@ -1,0 +1,53 @@
+ion-header {
+    position: absolute;
+
+    ion-toolbar {
+        --ion-background-color: transparent;
+        --opacity             : 0;
+
+        ion-title {
+            color: var(--ion-text-color-custom);
+        }
+    }
+}
+
+ion-content {
+    --ion-background-color: var(--ion-color-background-custom-FDF7FD);
+
+    ion-card-content {
+        position: absolute;
+        color: var(--ion-text-color-custom);
+
+        .container {
+            width: 100%;
+            padding-top: 60px;
+
+            .container-img {
+                position: relative;
+                z-index: 1;
+
+                .container-img-item {
+                    position: absolute;
+                    z-index: 9;
+                    top: 0;
+
+                    .container-img-you {
+                        transform: translate(220px, -10px);
+                    }
+
+                    .container-img-newfriend {
+                        transform: translate(20px, -100px);
+                    }
+
+                    .container-img-music {
+                        transform: translate(74px, -380px);
+                    }
+
+                    .container-img-fashion {
+                        transform: translate(216px, -266px);
+                    }
+                }
+            }
+        }
+    }
+}
