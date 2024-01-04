@@ -1,0 +1,7 @@
+{
+  "name": "MatchMeApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
